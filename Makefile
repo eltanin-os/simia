@@ -1,0 +1,114 @@
+include config.mk
+
+.SUFFIXES:
+.SUFFIXES: .o .c
+
+INC= -I inc
+HDR=\
+	inc/stdlib.h\
+	inc/string.h
+
+# MAN
+
+# LIB SRC
+LIBCSRC=\
+	src/stdlib/_Exit.c\
+	src/stdlib/abort.c\
+	src/stdlib/calloc.c\
+	src/stdlib/exit.c\
+	src/stdlib/free.c\
+	src/stdlib/malloc.c\
+	src/stdlib/realloc.c\
+	src/string/bcmp.c\
+	src/string/bcopy.c\
+	src/string/bzero.c\
+	src/string/explicit_bzero.c\
+	src/string/index.c\
+	src/string/memccpy.c\
+	src/string/memchr.c\
+	src/string/memcmp.c\
+	src/string/memcpy.c\
+	src/string/memmem.c\
+	src/string/memmove.c\
+	src/string/mempcpy.c\
+	src/string/memrchr.c\
+	src/string/memset.c\
+	src/string/rindex.c\
+	src/string/sterror_r.c\
+	src/string/stpcpy.c\
+	src/string/stpncpy.c\
+	src/string/strcat.c\
+	src/string/strchr.c\
+	src/string/strcpy.c\
+	src/string/strdup.c\
+	src/string/strlen.c\
+	src/string/strncat.c\
+	src/string/strncpy.c\
+	src/string/strndup.c\
+	src/string/strnlen.c\
+	src/string/strrchr.c\
+	src/string/strstr.c\
+	src/string/bcmp.c\
+	src/string/bcopy.c\
+	src/string/bzero.c\
+	src/string/explicit_bzero.c\
+	src/string/index.c\
+	src/string/memccpy.c\
+	src/string/memchr.c\
+	src/string/memcmp.c\
+	src/string/memcpy.c\
+	src/string/memmem.c\
+	src/string/memmove.c\
+	src/string/mempcpy.c\
+	src/string/memrchr.c\
+	src/string/memset.c\
+	src/string/rindex.c\
+	src/string/sterror_r.c\
+	src/string/stpcpy.c\
+	src/string/stpncpy.c\
+	src/string/strcat.c\
+	src/string/strchr.c\
+	src/string/strcpy.c\
+	src/string/strdup.c\
+	src/string/strlen.c\
+	src/string/strncat.c\
+	src/string/strncpy.c\
+	src/string/strndup.c\
+	src/string/strnlen.c\
+	src/string/strrchr.c\
+	src/string/strstr.c
+
+# LIB PATH
+LIBC= lib/libc.a
+
+# LIB OBJS
+LIBCOBJ= $(LIBCSRC:.c=.o)
+
+# ALL
+LIB= $(LIBC)
+OBJ= $(LIBCOBJ)
+SRC=
+
+# VAR RULES
+all: $(LIB)
+
+$(OBJ): $(HDR) config.mk
+
+# SUFFIX RULES
+.o:
+	$(CC) $(LDFLAGS) -o $@ $< $(LIB) $(LDLIBS)
+
+.c.o:
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(INC) -o $@ -c $<
+
+# LIBRARIES RULES
+$(LIBC): $(LIBCOBJ)
+	$(AR) rc $@ $(LIBCOBJ)
+	$(RANLIB) $@
+
+# USER ACTIONS
+clean:
+	rm -f $(BIN) $(OBJ) $(LIB)
+
+.PHONY:
+	all install clean
