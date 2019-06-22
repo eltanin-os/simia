@@ -13,12 +13,14 @@ HDR=\
 
 # LIB SRC
 LIBCSRC=\
+	src/stdio/asprintf.c\
 	src/stdio/dprintf.c\
 	src/stdio/fprintf.c\
 	src/stdio/printf.c\
 	src/stdio/puts.c\
 	src/stdio/snprintf.c\
 	src/stdio/sprintf.c\
+	src/stdio/vasprintf.c\
 	src/stdio/vdprintf.c\
 	src/stdio/vfprintf.c\
 	src/stdio/vprintf.c\
@@ -46,7 +48,6 @@ LIBCSRC=\
 	src/string/memrchr.c\
 	src/string/memset.c\
 	src/string/rindex.c\
-	src/string/sterror_r.c\
 	src/string/stpcpy.c\
 	src/string/stpncpy.c\
 	src/string/strcat.c\
@@ -75,13 +76,14 @@ LIBCSRC=\
 	src/string/memrchr.c\
 	src/string/memset.c\
 	src/string/rindex.c\
-	src/string/sterror_r.c\
 	src/string/stpcpy.c\
 	src/string/stpncpy.c\
 	src/string/strcat.c\
 	src/string/strchr.c\
 	src/string/strcpy.c\
 	src/string/strdup.c\
+	src/string/strerror.c\
+	src/string/strerror_r.c\
 	src/string/strlen.c\
 	src/string/strncat.c\
 	src/string/strncpy.c\
