@@ -1,7 +1,7 @@
-#include <tertium/cpu.h>
-#include <tertium/std.h>
-
 #include <string.h>
+
+#include "tertium_cpu.h"
+#include "tertium_std.h"
 
 void *
 mempcpy(void *s1, const void *s2, size_t n)

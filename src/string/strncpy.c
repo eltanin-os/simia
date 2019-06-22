@@ -1,7 +1,7 @@
-#include <tertium/cpu.h>
-#include <tertium/std.h>
-
 #include <string.h>
+
+#include "tertium_cpu.h"
+#include "tertium_std.h"
 
 char *
 strncpy(char *restrict s1, char *restrict s2, size_t n)

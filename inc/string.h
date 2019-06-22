@@ -1,9 +1,10 @@
 #ifndef _STRING_H
 #define _STRING_H
 
-#define NULL ((void *)0)
+#define __NEED_size_t
+#include "__types__.h"
 
-typedef unsigned long size_t;
+#define NULL ((void *)0)
 
 int    bcmp(const void *, const void *, size_t);
 void   bcopy(const void *, void *, size_t);

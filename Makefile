@@ -5,6 +5,7 @@ include config.mk
 
 INC= -I inc
 HDR=\
+	inc/stdio.h\
 	inc/stdlib.h\
 	inc/string.h
 
@@ -12,6 +13,17 @@ HDR=\
 
 # LIB SRC
 LIBCSRC=\
+	src/stdio/dprintf.c\
+	src/stdio/fprintf.c\
+	src/stdio/printf.c\
+	src/stdio/puts.c\
+	src/stdio/snprintf.c\
+	src/stdio/sprintf.c\
+	src/stdio/vdprintf.c\
+	src/stdio/vfprintf.c\
+	src/stdio/vprintf.c\
+	src/stdio/vsnprintf.c\
+	src/stdio/vsprintf.c\
 	src/stdlib/_Exit.c\
 	src/stdlib/abort.c\
 	src/stdlib/calloc.c\
