@@ -33,11 +33,20 @@ LIBCSRC=\
 	src/stdio/vsprintf.c\
 	src/stdlib/_Exit.c\
 	src/stdlib/abort.c\
+	src/stdlib/atoi.c\
+	src/stdlib/atol.c\
+	src/stdlib/atoll.c\
+	src/stdlib/bsearch.c\
 	src/stdlib/calloc.c\
 	src/stdlib/exit.c\
 	src/stdlib/free.c\
 	src/stdlib/malloc.c\
+	src/stdlib/qsort.c\
 	src/stdlib/realloc.c\
+	src/stdlib/strtol.c\
+	src/stdlib/strtoll.c\
+	src/stdlib/strtoul.c\
+	src/stdlib/strtoull.c\
 	src/string/bcmp.c\
 	src/string/bcopy.c\
 	src/string/bzero.c\
