@@ -15,7 +15,9 @@ HDR=\
 LIBCSRC=\
 	src/stdio/asprintf.c\
 	src/stdio/dprintf.c\
+	src/stdio/fclose.c\
 	src/stdio/fflush.c\
+	src/stdio/fopen.c\
 	src/stdio/fprintf.c\
 	src/stdio/fputc.c\
 	src/stdio/getchar.c\
