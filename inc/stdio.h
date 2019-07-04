@@ -9,10 +9,6 @@
 #define EOF (-1)
 #define NULL ((void *)0)
 
-#define stdin  ioq0
-#define stdout ioq1
-#define stderr ioq2
-
 int    asprintf(char **__retrict, const char *__restrict, ...);
 int    dprintf(int, const char *__restrict, ...);
 int    fclose(FILE *);
@@ -33,5 +29,9 @@ int    vfprintf(FILE *__restrict, const char *__restrict, va_list);
 int    vprintf(const char *__restrict, va_list);
 int    vsnprintf(char *__restrict, size_t, const char *__restrict, va_list);
 int    vsprintf(char *__restrict, const char *__restrict, va_list);
+
+extern void * stderr;
+extern void * stdin;
+extern void * stdout;
 
 #endif

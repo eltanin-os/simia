@@ -27,6 +27,9 @@ LIBCSRC=\
 	src/stdio/puts.c\
 	src/stdio/snprintf.c\
 	src/stdio/sprintf.c\
+	src/stdio/stderr.c\
+	src/stdio/stdin.c\
+	src/stdio/stdout.c\
 	src/stdio/vasprintf.c\
 	src/stdio/vdprintf.c\
 	src/stdio/vfprintf.c\
