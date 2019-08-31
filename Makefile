@@ -13,6 +13,22 @@ HDR=\
 
 # LIB SRC
 LIBCSRC=\
+	src/ctype/isalnum.c\
+	src/ctype/isalpha.c\
+	src/ctype/isascii.c\
+	src/ctype/isblank.c\
+	src/ctype/iscntrl.c\
+	src/ctype/isdigit.c\
+	src/ctype/isgraph.c\
+	src/ctype/islower.c\
+	src/ctype/isprint.c\
+	src/ctype/ispunct.c\
+	src/ctype/isspace.c\
+	src/ctype/isupper.c\
+	src/ctype/isxdigit.c\
+	src/ctype/toascii.c\
+	src/ctype/tolower.c\
+	src/ctype/toupper.c\
 	src/stdio/asprintf.c\
 	src/stdio/dprintf.c\
 	src/stdio/fclose.c\
