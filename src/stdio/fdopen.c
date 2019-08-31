@@ -16,7 +16,7 @@ fdopen(int fd, const char *restrict m)
 
 	mode = __stdio_filestrmode(m);
 
-	if (!mode) {
+	if (mode == (uint)-1) {
 		errno = C_EINVAL;
 		return nil;
 	}

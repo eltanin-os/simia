@@ -12,7 +12,7 @@ fopen(const char *restrict s, const char *restrict m)
 
 	mode = __stdio_filestrmode(m);
 
-	if (!(s && mode)) {
+	if (!s || mode == (uint)-1) {
 		errno = C_EINVAL;
 		return nil;
 	}

@@ -10,7 +10,7 @@ __stdio_filestrmode(const char *s)
 	uint m;
 
 	if (!s)
-		return 0;
+		return -1;
 
 	m = 0;
 
@@ -25,7 +25,7 @@ __stdio_filestrmode(const char *s)
 		m |= C_OAPPEND|C_OCREATE|C_OWRITE;
 		break;
 	default:
-		return 0;
+		return -1;
 	}
 
 	switch (s[1]) {
@@ -37,15 +37,15 @@ __stdio_filestrmode(const char *s)
 	case '\0':
 		return m;
 	default:
-		return 0;
+		return -1;
 	}
 
 	switch (s[2]) {
 	case 'b':
-		return (s[3] == 0) ? m : 0;
+		return (!s[3]) ? m : (uint)-1;
 	case '\0':
 		return m;
 	default:
-		return 0;
+		return -1;
 	}
 }
