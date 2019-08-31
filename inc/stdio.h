@@ -15,6 +15,7 @@
 int    asprintf(char **__retrict, const char *__restrict, ...);
 int    dprintf(int, const char *__restrict, ...);
 int    fclose(FILE *);
+FILE * fdopen(int, const char *);
 int    fflush(FILE *);
 char * fgets(char *__restrict, int, FILE *__restrict);
 FILE * fopen(const char *__restrict, const char *__restrict);

@@ -32,6 +32,7 @@ LIBCSRC=\
 	src/stdio/asprintf.c\
 	src/stdio/dprintf.c\
 	src/stdio/fclose.c\
+	src/stdio/fdopen.c\
 	src/stdio/fflush.c\
 	src/stdio/fgetc.c\
 	src/stdio/fgets.c\
@@ -47,6 +48,7 @@ LIBCSRC=\
 	src/stdio/stderr.c\
 	src/stdio/stdin.c\
 	src/stdio/stdout.c\
+	src/stdio/strtomode.c\
 	src/stdio/vasprintf.c\
 	src/stdio/vdprintf.c\
 	src/stdio/vfprintf.c\
