@@ -36,6 +36,7 @@ LIBCSRC=\
 	src/stdio/fflush.c\
 	src/stdio/fgetc.c\
 	src/stdio/fgets.c\
+	src/stdio/fileno.c\
 	src/stdio/fopen.c\
 	src/stdio/fprintf.c\
 	src/stdio/fputc.c\
