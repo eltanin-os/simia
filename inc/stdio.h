@@ -9,16 +9,20 @@
 #define EOF (-1)
 #define NULL ((void *)0)
 
+#define getc(a) fgetc((a))
+#define putc(a, b) fputc((a), (b))
+
 int    asprintf(char **__retrict, const char *__restrict, ...);
 int    dprintf(int, const char *__restrict, ...);
 int    fclose(FILE *);
 int    fflush(FILE *);
+char * fgets(char *__restrict, int, FILE *__restrict);
 FILE * fopen(const char *__restrict, const char *__restrict);
 int    fprintf(FILE *__restrict, const char *__restrict, ...);
+int    fgetc(FILE *);
 int    fputc(int, FILE *);
 int    getchar(void);
 int    printf(const char *__restrict, ...);
-int    putc(int, FILE *);
 int    putchar(int);
 int    puts(const char *);
 int    snprintf(char *__restrict, size_t, const char *__restrict, ...);

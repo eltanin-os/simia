@@ -17,12 +17,13 @@ LIBCSRC=\
 	src/stdio/dprintf.c\
 	src/stdio/fclose.c\
 	src/stdio/fflush.c\
+	src/stdio/fgetc.c\
+	src/stdio/fgets.c\
 	src/stdio/fopen.c\
 	src/stdio/fprintf.c\
 	src/stdio/fputc.c\
 	src/stdio/getchar.c\
 	src/stdio/printf.c\
-	src/stdio/putc.c\
 	src/stdio/putchar.c\
 	src/stdio/puts.c\
 	src/stdio/snprintf.c\

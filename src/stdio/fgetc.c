@@ -4,9 +4,8 @@
 #include "tertium_std.h"
 
 int
-putc(int c, FILE *p)
+fgetc(FILE *p)
 {
-	char ch;
-	ch = (char)c;
-	return c_ioq_nput(p, &ch, 1);
+	char buf;
+	return ((c_ioq_get(p, &buf, 1) <= 0) ? EOF : buf);
 }
