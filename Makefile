@@ -40,6 +40,7 @@ LIBCSRC=\
 	src/stdio/fopen.c\
 	src/stdio/fprintf.c\
 	src/stdio/fputc.c\
+	src/stdio/fputs.c\
 	src/stdio/fread.c\
 	src/stdio/fwrite.c\
 	src/stdio/getchar.c\

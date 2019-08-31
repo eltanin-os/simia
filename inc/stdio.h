@@ -22,6 +22,7 @@ FILE * fopen(const char *__restrict, const char *__restrict);
 int    fprintf(FILE *__restrict, const char *__restrict, ...);
 int    fgetc(FILE *);
 int    fputc(int, FILE *);
+int    fputs(const char *__restrict, FILE *__restrict);
 size_t fread(void *__restrict, size_t, size_t, FILE *__restrict);
 size_t fwrite(const void *__restrict, size_t, size_t, FILE *__restrict);
 int    getchar(void);
