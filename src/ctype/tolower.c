@@ -6,5 +6,5 @@
 int
 tolower(int c)
 {
-	return isupper(c) ? (uchar)c + 'a' - 'A' : c;
+	return isupper(c) ? (uchar)c + ('a' - 'A') : c;
 }
