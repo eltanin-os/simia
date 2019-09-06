@@ -5,14 +5,14 @@
 #include "tertium_std.h"
 
 int
-fclose(FILE *p)
+fclose(FILE *fp)
 {
+	ctype_ioq *p;
 	int r;
 
-	(void)c_ioq_flush(p);
-	r = c_sys_close(((CIoq *)p)->fd);
-	c_std_free(((CIoq *)p)->mb);
+	p = fp;
+	r = c_ioq_flush(p) | c_sys_close(p->fd);
+	c_std_free(p->mb);
 	c_std_free(p);
-
 	return r;
 }

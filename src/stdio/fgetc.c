@@ -7,5 +7,6 @@ int
 fgetc(FILE *p)
 {
 	char buf;
+
 	return ((c_ioq_get(p, &buf, 1) <= 0) ? EOF : buf);
 }

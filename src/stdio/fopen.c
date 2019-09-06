@@ -7,7 +7,7 @@
 FILE *
 fopen(const char *restrict s, const char *restrict m)
 {
-	int  fd;
+	int fd;
 	uint mode;
 
 	mode = __stdio_filestrmode(m);

@@ -7,5 +7,5 @@ void
 _Exit(int r)
 {
 	c_std_exit(r);
-	while(1);
+	for (;;) ;
 }

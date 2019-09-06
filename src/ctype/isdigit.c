@@ -6,5 +6,5 @@
 int
 isdigit(int c)
 {
-	return (uchar)c - '0' < 10; 
+	return (uchar)c - '0' < 10;
 }

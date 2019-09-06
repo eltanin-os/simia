@@ -5,7 +5,7 @@
 #include "tertium_std.h"
 
 static int
-dummy(CFmt *p)
+dummy(ctype_fmt *p)
 {
 	(void)p;
 	return 0;
@@ -14,8 +14,8 @@ dummy(CFmt *p)
 int
 vsnprintf(char *restrict buf, size_t n, const char *restrict fmt, va_list ap)
 {
-	CArr arr;
-	CFmt f;
+	ctype_arr arr;
+	ctype_fmt f;
 
 	c_arr_init(&arr, buf, n);
 	c_fmt_fdinit(&f, 0, &arr, nil);

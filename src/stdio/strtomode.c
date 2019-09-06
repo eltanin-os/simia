@@ -19,10 +19,10 @@ __stdio_filestrmode(const char *s)
 		m |= C_OREAD;
 		break;
 	case 'w':
-		m |= C_OCREATE|C_OWRITE;
+		m |= C_OCREATE | C_OWRITE;
 		break;
 	case 'a':
-		m |= C_OAPPEND|C_OCREATE|C_OWRITE;
+		m |= C_OAPPEND | C_OCREATE | C_OWRITE;
 		break;
 	default:
 		return -1;

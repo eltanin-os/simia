@@ -1,1 +1,1 @@
-uint __stdio_filestrmode(const char *s);
+uint __stdio_filestrmode(const char *);

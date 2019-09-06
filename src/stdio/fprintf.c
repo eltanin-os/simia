@@ -9,6 +9,7 @@ fprintf(FILE *restrict fp, const char *restrict s, ...)
 {
 	int r;
 	va_list ap;
+
 	va_start(ap, s);
 	r = vfprintf(fp, s, ap);
 	va_end(ap);

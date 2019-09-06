@@ -7,5 +7,5 @@ void
 abort(void)
 {
 	c_sys_abort();
-	while(1);
+	for (;;) ;
 }

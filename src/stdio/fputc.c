@@ -7,6 +7,7 @@ int
 fputc(int c, FILE *p)
 {
 	char ch;
+
 	ch = (char)c;
 	return c_ioq_nput(p, &ch, 1);
 }

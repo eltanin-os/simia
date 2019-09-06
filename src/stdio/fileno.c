@@ -4,7 +4,10 @@
 #include "tertium_std.h"
 
 int
-fileno(FILE *p)
+fileno(FILE *fp)
 {
-	return ((CIoq *)p)->fd;
+	ctype_ioq *p;
+
+	p = fp;
+	return p->fd;
 }
