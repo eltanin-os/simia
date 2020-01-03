@@ -6,5 +6,5 @@
 ulong
 strtoul(const char *restrict s, char **restrict e, int b)
 {
-	return (ulong)c_std_strtovl((char *)s, b, 0, C_ULONGMAX, e, nil);
+	return c_std_strtouvl((char *)s, b, 0, C_ULONGMAX, e, nil);
 }

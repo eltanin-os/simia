@@ -6,7 +6,5 @@
 int
 getchar(void)
 {
-	char buf;
-
-	return ((c_ioq_get(ioq0, &buf, 1) <= 0) ? EOF : buf);
+	return fgetc(stdin);
 }

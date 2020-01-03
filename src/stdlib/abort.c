@@ -6,6 +6,6 @@
 void
 abort(void)
 {
-	c_sys_abort();
+	c_std_abort();
 	for (;;) ;
 }

@@ -4,11 +4,10 @@
 #include "tertium_cpu.h"
 #include "tertium_std.h"
 
-static int
-dummy(ctype_fmt *p)
+static ctype_status
+put(ctype_fmt *p, char *s, usize n)
 {
-	(void)p;
-	return 0;
+	return c_arr_cat(p->mb, s, n, sizeof(uchar));
 }
 
 int
@@ -18,12 +17,7 @@ vsnprintf(char *restrict buf, size_t n, const char *restrict fmt, va_list ap)
 	ctype_fmt f;
 
 	c_arr_init(&arr, buf, n);
-	c_fmt_fdinit(&f, 0, &arr, nil);
-	f.farg = nil;
-	f.fn = &dummy;
-
+	c_fmt_init(&f, nil, &arr, put);
 	va_copy(f.args, ap);
-	(void)c_fmt_fmt(&f, (char *)fmt);
-
-	return f.nfmt;
+	return c_fmt_fmt(&f, (char *)fmt);
 }

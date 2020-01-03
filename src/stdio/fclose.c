@@ -11,8 +11,7 @@ fclose(FILE *fp)
 	int r;
 
 	p = fp;
-	r = c_ioq_flush(p) | c_sys_close(p->fd);
-	c_std_free(p->mb);
-	c_std_free(p);
+	r = (c_ioq_flush(p) | c_sys_close(p->fd)) ? EOF : 0;
+	c_ioq_free(p);
 	return r;
 }

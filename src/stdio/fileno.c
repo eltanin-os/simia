@@ -6,8 +6,5 @@
 int
 fileno(FILE *fp)
 {
-	ctype_ioq *p;
-
-	p = fp;
-	return p->fd;
+	return c_ioq_fd((ctype_ioq *)fp);
 }
