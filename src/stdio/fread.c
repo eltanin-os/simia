@@ -11,7 +11,7 @@ fread(void *restrict p, size_t m, size_t n, FILE *restrict fp)
 	if (C_OFLW_UM(usize, m, n))
 		return 0;
 
-	if ((r = c_ioq_get(fp, (char *)p, m * n)) < 0)
+	if ((r = c_ioq_getall(fp, (char *)p, m * n)) < 0)
 		return 0;
 
 	return r;
