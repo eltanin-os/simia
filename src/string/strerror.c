@@ -6,7 +6,8 @@
 char *
 strerror(int e)
 {
-	static char emsg[C_ERRSIZ];
+	static char buf[C_ERRSIZ];
 
-	return c_sys_strerror(e, emsg, sizeof(emsg));
+	(void)strerror_r(e, buf, sizeof(buf));
+	return buf;
 }

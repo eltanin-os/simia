@@ -6,10 +6,6 @@
 char *
 strncat(char *restrict s1, char *restrict s2, size_t n)
 {
-	char *p;
-
-	p = s1;
-	s1 = s1 + c_str_len(s1, n);
-	while ((*s1++ = *s2++)) ;
-	return p;
+	(void)stpncpy(memchr(s1, 0, n), s2, n);
+	return s1;
 }
