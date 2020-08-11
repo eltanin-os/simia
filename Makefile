@@ -29,6 +29,14 @@ LIBCSRC=\
 	src/ctype/toascii.c\
 	src/ctype/tolower.c\
 	src/ctype/toupper.c\
+	src/err/err.c\
+	src/err/errx.c\
+	src/err/verr.c\
+	src/err/verrx.c\
+	src/err/vwarn.c\
+	src/err/vwarnx.c\
+	src/err/warn.c\
+	src/err/warnx.c\
 	src/stdio/asprintf.c\
 	src/stdio/dprintf.c\
 	src/stdio/fclose.c\
