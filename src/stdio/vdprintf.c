@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_dat.h"
+#include "tertium_fns.h"
 
 static ctype_status
 put(ctype_fmt *p, char *s, usize n)

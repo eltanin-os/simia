@@ -1,8 +1,5 @@
 #include <string.h>
 
-#include "tertium_cpu.h"
-#include "tertium_std.h"
-
 char *
 stpncpy(char *restrict s1, const char *restrict s2, size_t n)
 {

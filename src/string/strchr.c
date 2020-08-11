@@ -1,7 +1,7 @@
 #include <string.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_fns.h"
 
 char *
 strchr(const char *s, int c)

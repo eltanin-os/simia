@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_dat.h"
+#include "tertium_fns.h"
 #include "__int__.h"
 
 #define GETOP(a) \
@@ -12,9 +13,7 @@ fdopen(int fd, const char *restrict m)
 {
 	uint mode;
 
-	mode = __stdio_filestrmode(m);
-
-	if (mode == (uint)-1) {
+	if ((mode = __stdio_filestrmode(m)) == (uint)-1) {
 		errno = C_EINVAL;
 		return nil;
 	}

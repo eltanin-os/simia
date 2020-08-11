@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_dat.h"
+#include "tertium_fns.h"
 #include "__int__.h"
 
 FILE *

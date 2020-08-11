@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_dat.h"
+#include "tertium_fns.h"
 
 static size
 min(size a, size b)

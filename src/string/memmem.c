@@ -1,7 +1,7 @@
 #include <string.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_fns.h"
 
 void *
 memmem(const void *h0, size_t k, const void *n0, size_t l)

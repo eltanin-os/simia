@@ -1,7 +1,7 @@
 #include <string.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_fns.h"
 
 void
 explicit_bzero(void *s, size_t n)

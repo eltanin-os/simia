@@ -1,9 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-#include "tertium_cpu.h"
-#include "tertium_std.h"
-
 int
 printf(const char *restrict s, ...)
 {

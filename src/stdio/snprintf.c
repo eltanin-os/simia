@@ -1,9 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-#include "tertium_cpu.h"
-#include "tertium_std.h"
-
 int
 snprintf(char *restrict buf, size_t n, const char *restrict fmt, ...)
 {

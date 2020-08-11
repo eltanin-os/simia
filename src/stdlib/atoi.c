@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_fns.h"
 
 int
 atoi(const char *s)

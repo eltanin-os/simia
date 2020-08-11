@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_dat.h"
+#include "tertium_fns.h"
 
 int
-fileno(FILE *fp)
+fileno(FILE *p)
 {
-	return c_ioq_fd((ctype_ioq *)fp);
+	return c_ioq_fileno(p);
 }

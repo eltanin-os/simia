@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_dat.h"
+#include "tertium_fns.h"
 
 int
 vfprintf(FILE *restrict fp, const char *restrict s, va_list ap)

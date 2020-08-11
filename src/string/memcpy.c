@@ -1,7 +1,7 @@
 #include <string.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_fns.h"
 
 void *
 memcpy(void *restrict s1, const void *restrict s2, size_t n)

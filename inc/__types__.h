@@ -1,9 +1,10 @@
 #include "tertium_cpu.h"
+#include "tertium_dat.h"
 
 #ifndef __HAVE_FILE
 #ifdef  __NEED_FILE
 #define __HAVE_FILE
-typedef void FILE;
+typedef ctype_ioq FILE;
 #endif
 #endif
 

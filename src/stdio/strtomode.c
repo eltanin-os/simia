@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
-#include "__int__.h"
 
 uint
 __stdio_filestrmode(const char *s)

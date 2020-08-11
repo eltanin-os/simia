@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 #include "tertium_cpu.h"
-#include "tertium_std.h"
+#include "tertium_dat.h"
+#include "tertium_fns.h"
 
 size_t
 fwrite(const void *restrict p, size_t m, size_t n, FILE *restrict fp)
